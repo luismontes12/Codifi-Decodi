@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Encriptador</title>
+    <meta name="description" content="Encriptador hecho por LuisVerdugo!"/>
+    <meta name="keywords" content="encriptador, alura, oracle, one, oracle one"/>
+    <meta name="author" content="LuisVerdugo" />
+    <meta name="robots" content="index"/>
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="titulo">
+        <a href="index.html">
+            <img src="candado.png" alt="">
+            <h1>Encriptador</h1>
+        </a>
+    </div>
+
+    <div class="container">
+        <div class="area-texto-entrada">
+            <textarea id="texto-entrada" name="texto-entrada"
+                placeholder="Ingrese una cadena de caracteres:"></textarea>
+            <div class="area-info">
+                <img src="candado.png" alt="">
+                <span>Solo letras minúsculas y sin acentos</span>
+            </div>
+            <div class="area-botones">
+                <button id="btn-encriptar">Encriptar</button>
+                <button id="btn-desencriptar">Desencriptar</button>
+            </div>
+        </div>
+        <div class="area-texto-salida">
+            <div id="notFound">
+                <img src="cifrar.png" alt="Muñeco">
+                <h1>No se ha encontrado mensaje</h1>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div id="resultado" style="display: none;">
+                <textarea id="texto-salida" readonly=""></textarea>
+                <button id="btn-copiar">Copiar</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+    <footer>
+        <center><p class="copyright">2023 Alura Challenge Luis Verdugo</p></center>
+    </footer>
+</body>
+</html>
